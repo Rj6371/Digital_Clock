@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+.digital-clock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.clock{
+  background: linear-gradient(30deg,pink,lightskyblue, yellow);
+  display: flex;
+  padding: 1rem;
+  color: rgba(0,0,0,.5);
+  text-shadow: 2px 2px 2px black;
+  /*box-shadow: 0 0 45px goldenrod;*/
+  border-radius: 7px;
+  position: absolute;
+  animation: move 3s 0s infinite ease-in;
+}
+
+@keyframes move{
+  0%{
+      box-shadow: 3px 3px 50px goldenrod;
+  }
+  25%{
+      box-shadow: 3px 3px 50px lightskyblueblue;
+         /*border: 1px solid gray;*/
+  }
+  50%{
+      box-shadow: 3px 3px 50px greenyellow;
+  }
+  75%{
+      box-shadow: 3px 3px 50px khaki;
+       border: .3px solid gray;
+  }
+  100%{
+     box-shadow:3px  3px 50px salmon;
+  }
+}
